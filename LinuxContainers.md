@@ -1,5 +1,11 @@
 # Linux Containers(lxc)
 
+**Linux container** makes it possible to run multiple isolated Linux systems on one host. It is designed to be lightweight, portable, and unprivileged.
+
+Linux containers are much faster than full virtual machines because they take up **less disk space**. **LXC** use the features of the Linux kernel such as cgroups, namespaces, chroot, etc to create a **sandboxed operating environment** for running applications in isolation.
+
+Google's Chrome OS introduced a type of "containerization" about 10 years ago, but left it open-sourced in 2013 under the name lxc.
+
 ## Installations
 
 ```
@@ -140,7 +146,7 @@ lxc file edit ubuntu1/root/.ssh/authorized_keys
 lxc snapshot ubuntu1
 ```
 
-'lxc list' shows snapshot of a container.
+**'lxc list'** shows snapshot of a container.
 
 ### Get details of the snapshot from:
 ```
@@ -158,15 +164,3 @@ lxc restore ubuntu1 snap0
 ```
 lxc delete ubuntu1/snap0
 ```
-
-
-
-## Connecting LXC network interface to home LAN so that it connects to the home router:
-
-```
-lxc config device add ubuntu1 <container interface name> nic nictype=bridged parent=<local bridged adapter name> name=<local interface name>
-
-lxc config device add ubuntu1 eth0 nic nictype=bridged parent=br0 name=eth0
-```
-
-
