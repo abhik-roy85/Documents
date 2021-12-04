@@ -168,5 +168,3 @@ lxc config device add ubuntu1 <container interface name> nic nictype=bridged par
 
 lxc config device add ubuntu1 eth0 nic nictype=bridged parent=br0 name=eth0
 ```
-
-
