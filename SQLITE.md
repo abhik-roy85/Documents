@@ -330,7 +330,7 @@ sqlite>
 
 <a id='Row_Read_Operation'></a>
 ## <u>Row Read Operation:</u>
-        
+
 
 <a id='Read_a_specific_row_of_the_table'></a>
 ### Read a specific row of the table
@@ -420,3 +420,7 @@ SELECT distro, COUNT(*) FROM linux GROUP BY distro;
 
 
 [Top](#Top)
+
+
+
+[Back to Content](./README.md)
