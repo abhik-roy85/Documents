@@ -90,7 +90,7 @@ Note: ctrl+d  to exit sqlite
 sudo apt --purge remove sqlite3
 ```
 
-[$\uparrow$ Top](#Top)
+[Top](#Top)
 
 <a id='Create_Operation'></a>
 # <u>Create Operation:</u>
@@ -128,7 +128,7 @@ sqlite> CREATE TABLE IF NOT EXISTS linux (distro TEXT NOT NULL);
 ```
 
 
-[$\uparrow$ Top](#Top)
+[Top](#Top)
 
 ---
 
@@ -259,7 +259,7 @@ DELETE FROM <Table name> WHERE <Condition>;
 DELETE FROM linux WHERE id > 1 AND id < 4;
 ```
 
-[$\uparrow$ Top](#Top)
+[Top](#Top)
 
 ---
 
@@ -419,4 +419,4 @@ SELECT distro, COUNT(*) FROM linux GROUP BY distro;
 ```
 
 
-[$\uparrow$ Top](#Top)
+[Top](#Top)
