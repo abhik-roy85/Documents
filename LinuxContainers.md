@@ -165,6 +165,21 @@ lxc restore ubuntu1 snap0
 lxc delete ubuntu1/snap0
 ```
 
+## Ssh into a linux container setup:
+1. (Host) Login to guest db1 instance:
+	lxc exec ubuntu18 sh
 
+2. (Guest) Add new remote user 'ubuntu18'
+	adduser ubuntu18
+
+3. (Guest) Edit /etc/ssh/sshd_config file
+	PasswordAuthentication yes
+
+4. (Guest) Restart the sshd daemon
+	systemctl restart sshd
+
+5. (Host) ssh to the guest machine using userid/pwd
+	ssh ubuntu18@<ip>
+  
 
 [Back to Content](./README.md)
