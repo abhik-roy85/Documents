@@ -180,6 +180,12 @@ lxc delete ubuntu1/snap0
 
 5. (Host) ssh to the guest machine using userid/pwd
 	ssh ubuntu18@<ip>
-  
+
+## To allow new user sudo access:
+Open:
+sudo vi /etc/sudoers
+
+add the line:
+username ALL=(ALL:ALL) ALL
 
 [Back to Content](./README.md)
